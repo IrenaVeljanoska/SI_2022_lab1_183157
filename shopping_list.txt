@@ -1,5 +1,5 @@
-bread
-milk
-sugar
-salt
-eggs
+bread x2
+milk x4
+sugar x1
+salt x1
+eggs x10
