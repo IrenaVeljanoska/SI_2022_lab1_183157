@@ -1,0 +1,155 @@
+СИ Лаб1 - Ирена Велјаноска - 183157
+
+Линк до github: https://github.com/IrenaVeljanoska/SI_2022_lab1_183157.git
+
+4. git clone https://github.com/IrenaVeljanoska/SI_2022_lab1_183157.git
+	го клонирам репозиториумот на мојот лаптоп
+   cd SI_2022_lab1_183157
+	влегувам/пристапувам до репото
+
+5. copy con shopping_list.txt - додавам текстуална датотека со име shopping_list.txt и 5 производи
+   git add shopping_list.txt  - ја ставам на stage
+   git commit -m "Add 5 items to the shopping list" - комит со порака
+
+6. notepad shopping_list.txt - вршам промена во txt фајлот и зачувувам
+   git add shopping_list.txt  - ја ставам на stage
+   git commit -m "Add quantities to the items." - комит со порака
+
+7. git branch branch1
+   git branch branch2 - креирам две нови гранки
+
+8. git log -логовите
+
+commit e0117b1a6fb3e7898261777ca2c1f6a00ae69236 (HEAD -> main, branch2, branch1)
+Author: IrenaVeljanoska <irena.veljanoska@students.finki.ukim.mk>
+Date:   Sun Apr 10 20:55:21 2022 +0200
+
+    Add quantities to the items.
+
+commit da7c941c66f9ec0079fa4520145ae778f6eac311
+Author: IrenaVeljanoska <irena.veljanoska@students.finki.ukim.mk>
+Date:   Sun Apr 10 20:35:58 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit fdaeaa9068e26f733e4a8db2f90bc6a45476045e (origin/main, origin/HEAD)
+Author: IrenaVeljanoska <82410097+IrenaVeljanoska@users.noreply.github.com>
+Date:   Sun Apr 10 00:24:09 2022 +0200
+
+    Update README.md
+
+commit a0f75172daee602726ecf329def579269863a666
+Author: IrenaVeljanoska <82410097+IrenaVeljanoska@users.noreply.github.com>
+Date:   Sun Apr 10 00:20:05 2022 +0200
+
+    Initial commit
+
+
+9. git push -u origin --all - синхронизирaње на сите гранки со remote репозиториумот
+
+10. git checkout branch1 - се префрлам на гранката branch1
+
+11. notepad shopping_list.txt - вршам промена во txt фајлот и зачувувам
+   git add shopping_list.txt  - ја ставам на stage
+   git commit -m "Change quantity of item #5" - комит со порака
+
+12. git checkout master - се префрлам на гранката master
+
+13. notepad shopping_list.txt - вршам промена во txt фајлот и зачувувам
+   git add shopping_list.txt  - ја ставам на stage
+   git commit -m "Change quantity of item #2" - комит со порака
+
+14. git push -u origin --all - синхронизирaње на сите гранки со remote репозиториумот
+
+15. git checkout branch2 - се префрлам на гранката branch2
+
+16. notepad shopping_list.txt - вршам промена во txt фајлот и зачувувам
+   git add shopping_list.txt  - ја ставам на stage
+   git commit -m “Modify item #4” - комит со порака
+
+17. git log -логовите
+
+commit aa56a13e535447ce3c2ef6ca1ebffd2d72b11f57 (HEAD -> branch2)
+Author: IrenaVeljanoska <irena.veljanoska@students.finki.ukim.mk>
+Date:   Sun Apr 10 21:39:16 2022 +0200
+
+    Modify item #4
+
+commit e0117b1a6fb3e7898261777ca2c1f6a00ae69236 (origin/branch2)
+Author: IrenaVeljanoska <irena.veljanoska@students.finki.ukim.mk>
+Date:   Sun Apr 10 20:55:21 2022 +0200
+
+    Add quantities to the items.
+
+commit da7c941c66f9ec0079fa4520145ae778f6eac311
+Author: IrenaVeljanoska <irena.veljanoska@students.finki.ukim.mk>
+Date:   Sun Apr 10 20:35:58 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit fdaeaa9068e26f733e4a8db2f90bc6a45476045e
+Author: IrenaVeljanoska <82410097+IrenaVeljanoska@users.noreply.github.com>
+Date:   Sun Apr 10 00:24:09 2022 +0200
+
+    Update README.md
+
+commit a0f75172daee602726ecf329def579269863a666
+Author: IrenaVeljanoska <82410097+IrenaVeljanoska@users.noreply.github.com>
+Date:   Sun Apr 10 00:20:05 2022 +0200
+
+    Initial commit
+
+18. notepad shopping_list.txt - додавам нова ставка во txt фајлот и зачувувам
+   git add shopping_list.txt  - ја ставам на stage
+   git commit --amend -m "Modify item #4 and add item #6" - вршам промена на последниот комит
+
+19. git log -логовите
+
+commit 7517d4fd43e7cbc0930ce8ad767d5e7125e9455c (HEAD -> branch2)
+Author: IrenaVeljanoska <irena.veljanoska@students.finki.ukim.mk>
+Date:   Sun Apr 10 21:39:16 2022 +0200
+
+    Modify item #4 and add item #6
+
+commit e0117b1a6fb3e7898261777ca2c1f6a00ae69236 (origin/branch2)
+Author: IrenaVeljanoska <irena.veljanoska@students.finki.ukim.mk>
+Date:   Sun Apr 10 20:55:21 2022 +0200
+
+    Add quantities to the items.
+
+commit da7c941c66f9ec0079fa4520145ae778f6eac311
+Author: IrenaVeljanoska <irena.veljanoska@students.finki.ukim.mk>
+Date:   Sun Apr 10 20:35:58 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit fdaeaa9068e26f733e4a8db2f90bc6a45476045e
+Author: IrenaVeljanoska <82410097+IrenaVeljanoska@users.noreply.github.com>
+Date:   Sun Apr 10 00:24:09 2022 +0200
+
+    Update README.md
+
+commit a0f75172daee602726ecf329def579269863a666
+Author: IrenaVeljanoska <82410097+IrenaVeljanoska@users.noreply.github.com>
+Date:   Sun Apr 10 00:20:05 2022 +0200
+
+    Initial commit
+
+20. git checkout master - се префрлам на гранката master
+    git merge branch1 - ја спојувам гранката branch1 на гранката master
+
+нема да се јави конфликт, ort стратегија
+
+21. git merge branch2 - ја спојувам гранката branch2 на гранката master
+
+ќе се јави конфликт, го решаваме со тоа што ја земаме промената во branch2 за точна
+    notepad shopping_list.txt - вршам промена на ставката 4 (ја преименувам во baking powder)
+    git add . - ја ставам на stage
+    git commit -a -правам комит
+    git merge branch2 - ја спојувам гранката branch2 на гранката master
+
+22. notepad 183157.txt
+    git add .
+    git commit 183157.txt
+
+23. git push -u origin --all - синхронизирaње на сите гранки со remote репозиториумот
