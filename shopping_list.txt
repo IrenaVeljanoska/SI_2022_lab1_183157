@@ -1,5 +1,6 @@
 bread x2
 milk x4
 sugar x1
-salt x1
+baking powder x1
 eggs x10
+butter
